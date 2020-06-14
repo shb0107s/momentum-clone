@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<title>Momentum Clone</title>
+</head>
+<body>
+	<section class="container">
+		<div class="js-weather weather">
+			<div>
+				<div class="degree"></div>
+				<div class="place"></div>
+			</div>
+			<img src="" alt="" class="weather-icon">
+		</div>
+
+		<div class="empty_top"></div>
+
+		<div class="js-clock clock">
+			<h1>00:00</h1>
+			<form action="" class="js-form form">
+				<div>Hello, what's your name?</div>
+				<input type="text" class="borderBttm">
+			</form>
+			<h4 class="js-greetings greetings"></h4>
+		</div>
+
+
+		<div class="toDoArea">
+			<div>
+				<div>Write a TO-DO</div>
+				<form action="" class="js-toDoForm toDoForm">
+					<input type="text" class="borderBttm">
+				</form>
+				<ul class="js-toDoList">
+				</ul>
+			</div>
+		</div>
+
+		<div class="empty_bttm"></div>
+	</section>
+
+
+
+	<script type="module" src="js/clock.mjs"></script>
+	<script type="module" src="js/greeting.mjs"></script>
+	<script type="module" src="js/todo.mjs"></script>
+	<script type="module" src="js/bg.mjs"></script>
+	<script type="module" src="js/weather.mjs"></script>
+	<script type="module" src="js/index.mjs"></script>
+</body>
+</html>
