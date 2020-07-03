@@ -151,3 +151,8 @@ input.borderBttm {
     z-index: -1;
     animation: fadeIn .5s linear;
 }
+
+
+.delBtn {
+    cursor: pointer;
+}

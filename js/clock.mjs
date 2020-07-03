@@ -1,20 +1,20 @@
-export default class {
-    constructor() {
-        this.clockContainer = document.querySelector(".js-clock");
-        this.clockTitle = this.clockContainer.querySelector("h1");
+export default function clock() {
+    const clockContainer = document.querySelector(".js-clock");
+    const clockTitle = clockContainer.querySelector("h1");
+
+    init();
+
+    function init(){
+        getTime();
+        setInterval(() => getTime(), 1000);
     }
 
-    getTime = () => {
+    function getTime() {
         const date = new Date();
         const seconds = date.getSeconds();
         const minutes = date.getMinutes();
         const hours = date.getHours();
     
-        this.clockTitle.innerText = `${hours<10?`0${hours}`:hours}:${minutes<10?`0${minutes}`:minutes}:${seconds<10?`0${seconds}`:seconds}`;
-    }
-    
-    init(){
-        this.getTime();
-        setInterval(this.getTime, 1000);
+        clockTitle.innerText = `${hours<10?`0${hours}`:hours}:${minutes<10?`0${minutes}`:minutes}:${seconds<10?`0${seconds}`:seconds}`;
     }
 }
